@@ -12,7 +12,8 @@
 10 - Il suffit de faire echo $HOME = $PATH  
 . = dossier courant / .. = dossier parent / ~ = /home/(home de l'utilisateur)
  ## _Exercice 2. Contrôle de mot de passe_
-  #!/bin/bash
+ ```
+ #!/bin/bash
 
 read -s -p 'Saisissez votre mot de passe :' pswd
 
@@ -21,9 +22,9 @@ if [ $PASSWORD = $pswd ]; then
 else
         echo 'Mot de passe incorrect'
 fi
-
+```
  ## _Exercice 3. Expressions rationnelles_
- 
+``` 
  #!/bin/bash
 
 function is_number()
@@ -45,6 +46,7 @@ if [ $? -eq 0 ]; then
 else
  echo "ce nombre n'est pas un nombre réel"
 fi
+```
  ## _Exercice 4. Contrôle d'utilisateur_
  
 ```
@@ -66,7 +68,7 @@ fi
 ```
 
 ## _Exercice 5. Factorielle_
-
+```
 #!/bin/bash
 
 counter=$1
@@ -79,7 +81,33 @@ do
 done
 
 echo $i
+```
 
+## _Exercice 6. Le juste prix_
+
+```
+#!/bin/bash
+
+prix=$RANDOM
+i=0
+read nb
+while [$nb != $prix]
+do
+     let i++
+     if [ $prix -lt $nb ]; then
+         echo "C'est moins"
+     else
+         echo "C'est plus"
+     fi
+     read nb
+done
+echo "Vous avez gagné en $i tentatives"
+```
+
+## _Exercice 7. Statistiques_
+
+```
+```
 
 
 
