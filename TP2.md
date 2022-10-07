@@ -47,6 +47,7 @@ else
 fi
  ## _Exercice 4. Contrôle d'utilisateur_
  
+```
 #!/bin/bash
 
 if [ -z $1 ] ; then
@@ -62,6 +63,7 @@ else
 echo "Cet utilisateur n'existe pas"
 
 fi
+```
 
 ## _Exercice 5. Factorielle_
 
